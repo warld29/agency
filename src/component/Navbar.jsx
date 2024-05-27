@@ -55,7 +55,7 @@ const Navbar = () => {
             Glam<span className="text-blue-400">Core</span>
           </h1>
 
-          <ul className="md:flex space-x-12 hidden">
+          <ul className="md:flex space-x-12 hidden cursor-pointer">
             {navItems.map(({ link, path }) => (
               <Link
                 to={path}
@@ -79,7 +79,7 @@ const Navbar = () => {
             </a>
             <button
               onClick={toggleRegistrationForm}
-              className="bg-blue-400 text-white py-2 px-4 transition-all duration-300 rounded hover:bg-[gray]"
+              className="bg-blue-400 text-white py-2 px-4 transition-all duration-300 rounded hover:bg-[gray] hover:-translate-y-4"
             >
               Sign Up
             </button>
