@@ -29,19 +29,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <div className="bg-[silver] h-screen">
-//   <div className="w-[100%] px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
-//     <Carousel className="w-[100%] h-screen">
-//       <div className="w-full md:w-[100%]">
-//         <img className="w-full h-screen object-cover" src={pg} alt="" />
-//       </div>
-//       <div className="w-full md:w-[100%]">
-//         <img className="w-full h-screen object-cover" src={pg2} alt="" />
-//       </div>
-//       <div className="w-full md:w-[100%]">
-//         <img className="w-full h-screen object-cover" src={pg4} alt="" />
-//       </div>
-//     </Carousel>
-//   </div>
-// </div>
