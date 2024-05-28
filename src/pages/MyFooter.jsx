@@ -14,21 +14,9 @@ const MyFooter = () => {
       <div className="w-full text-white">
         <div className="text-white grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div className="text-white">
-            <Footer.Title title="Company" className="text-white" />
-            <Footer.LinkGroup col>
-              <Footer.Link href="#" className="text-white">
-                About
-              </Footer.Link>
-              <Footer.Link href="#" className="text-white">
-                Careers
-              </Footer.Link>
-              <Footer.Link href="#" className="text-white">
-                Brand Center
-              </Footer.Link>
-              <Footer.Link href="#" className="text-white">
-                Blog
-              </Footer.Link>
-            </Footer.LinkGroup>
+            <h2 className="font-bold lg:text-5xl text-3xl">
+              Glam<span className="text-blue-400">Core</span>
+            </h2>
           </div>
           <div>
             <Footer.Title title="help center" className="text-white" />
@@ -91,7 +79,6 @@ const MyFooter = () => {
             <Footer.Icon href="#" icon={BsInstagram} className="text-white" />
             <Footer.Icon href="#" icon={BsTwitter} className="text-white" />
             <Footer.Icon href="#" icon={BsGithub} className="text-white" />
-            <Footer.Icon href="#" icon={BsDribbble} className="text-white" />
           </div>
         </div>
       </div>

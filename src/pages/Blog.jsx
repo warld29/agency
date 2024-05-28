@@ -20,7 +20,7 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12">
+    <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12" id="blog">
       <div className="text-center md:w-1/2 mx-auto">
         <h1 className="text-4xl text-gray-900 font-semibold mb-4">
           Read Some Testimonies of Victories

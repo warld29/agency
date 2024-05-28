@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const Newsletter = () => {
   return (
-    <div className="bg-gray-100 w-full">
+    <div className="bg-gray-100 w-full" id="newsletter">
       <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto py-16">
         <div className="flex items-center justify-center lg:w-2/3 mx-auto">
           <div className="text-center">

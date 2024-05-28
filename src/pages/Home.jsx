@@ -6,7 +6,7 @@ import gc3 from "../assets/gc3.jpg";
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="relative" id="home">
       <Carousel className="w-[100%] h-screen relative">
         <div className="w-full md:w-[100%]">
           <img className="w-full h-screen object-cover" src={gc4} alt="" />

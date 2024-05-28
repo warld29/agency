@@ -36,10 +36,14 @@ const Navbar = () => {
     { link: "Home", path: "home" },
     { link: "Service", path: "service" },
     { link: "About", path: "about" },
-    { link: "Product", path: "prodct" },
+    { link: "Product", path: "product" },
     { link: "Blog", path: "blog" },
     { link: "Newsletter", path: "newsletter" },
   ];
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="w-full bg-black md:bg-transparent fixed top-0 left-0 right-0">
@@ -55,7 +59,7 @@ const Navbar = () => {
             Glam<span className="text-blue-400">Core</span>
           </h1>
 
-          <ul className="md:flex space-x-12 hidden cursor-pointer">
+          <ul className="md:flex space-x-12 hidden ">
             {navItems.map(({ link, path }) => (
               <Link
                 to={path}
@@ -63,7 +67,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 key={path}
-                className="block text-white font-bold text-xl hover:text-blue-400"
+                className="block text-white font-bold text-xl hover:text-blue-400 cursor-pointer"
               >
                 {link}
               </Link>
@@ -114,6 +118,7 @@ const Navbar = () => {
               offset={-100}
               key={path}
               className="block text-base text-white hover:text-blue-400"
+              onClick={handleMenuItemClick}
             >
               {link}
             </Link>

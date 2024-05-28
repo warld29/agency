@@ -9,7 +9,7 @@ import ServiceCard from "../component/ServiceCard";
 
 const Service = ({ icon, text1, text2 }) => {
   return (
-    <div className="w-full bg-gray-100">
+    <div className="w-full bg-gray-100" id="service">
       <div className="md:px-14 px-4 py-16 max-w-screen-2xl mx-auto  ">
         <div className="text-center my-8">
           <h2 className="text-4xl font-semibold mb-2">Our Clients</h2>
