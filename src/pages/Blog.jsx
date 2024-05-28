@@ -1,24 +1,10 @@
 import React from "react";
+import blog1 from "../assets/blog1.jpg";
+import blog2 from "../assets/blog2.jpg";
+import blog3 from "../assets/blog3.jpg";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Blog = () => {
-  const blog = [
-    {
-      id: 1,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      Image: "/src/assets/blog1.jpg",
-    },
-    {
-      id: 2,
-      title: "perspiciatis incidunt officia similique vel qui.",
-      Image: "/src/assets/blog2.jpg",
-    },
-    {
-      id: 3,
-      title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      Image: "/src/assets/blog3.jpg",
-    },
-  ];
   return (
     <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto my-12" id="blog">
       <div className="text-center md:w-1/2 mx-auto">
@@ -35,30 +21,107 @@ const Blog = () => {
       </div>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
-        {blog.map((blog) => (
-          <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
-            <img
-              className="hover:scale-95 transition-all duration-300 lg:w-[500px] lg:h-[500px] object-cover rounded-lg"
-              src={blog.Image}
-              alt=""
-            />
-            <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
-              <h3 className="mb-3 text-gray-900 font-semibold">{blog.title}</h3>
-              <div className="flex items-center gap-8 text-center justify-center py-3">
-                <a
-                  href="/"
-                  className="font-bold text-blue-400 hover:text-[gray]"
-                >
-                  Readmore
-                  <FaArrowRight className="inline-block ml-2" />
-                </a>
-              </div>
+        <div className="mx-auto relative mb-12 cursor-pointer">
+          <img
+            className="hover:scale-95 transition-all duration-300 lg:w-[500px] lg:h-[500px] object-cover rounded-lg"
+            src={blog1}
+            alt=""
+          />
+          <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+            <h3 className="mb-3 text-gray-900 font-semibold">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </h3>
+            <div className="flex items-center gap-8 text-center justify-center py-3">
+              <a href="/" className="font-bold text-blue-400 hover:text-[gray]">
+                Readmore
+                <FaArrowRight className="inline-block ml-2" />
+              </a>
             </div>
           </div>
-        ))}
+        </div>
+        <div className="mx-auto relative mb-12 cursor-pointer">
+          <img
+            className="hover:scale-95 transition-all duration-300 lg:w-[500px] lg:h-[500px] object-cover rounded-lg"
+            src={blog2}
+            alt=""
+          />
+          <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+            <h3 className="mb-3 text-gray-900 font-semibold">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </h3>
+            <div className="flex items-center gap-8 text-center justify-center py-3">
+              <a href="/" className="font-bold text-blue-400 hover:text-[gray]">
+                Readmore
+                <FaArrowRight className="inline-block ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="mx-auto relative mb-12 cursor-pointer">
+          <img
+            className="hover:scale-95 transition-all duration-300 lg:w-[500px] lg:h-[500px] object-cover rounded-lg"
+            src={blog3}
+            alt=""
+          />
+          <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+            <h3 className="mb-3 text-gray-900 font-semibold">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </h3>
+            <div className="flex items-center gap-8 text-center justify-center py-3">
+              <a href="/" className="font-bold text-blue-400 hover:text-[gray]">
+                Readmore
+                <FaArrowRight className="inline-block ml-2" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Blog;
+
+//    {
+//      blog.map((blog) => (
+//        <div key={blog.id} className="mx-auto relative mb-12 cursor-pointer">
+//          <img
+//            className="hover:scale-95 transition-all duration-300 lg:w-[500px] lg:h-[500px] object-cover rounded-lg"
+//            src={blog.Image}
+//            alt=""
+//          />
+//          <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+//            <h3 className="mb-3 text-gray-900 font-semibold">
+//              {blog.title}
+//            </h3>
+//            <div className="flex items-center gap-8 text-center justify-center py-3">
+//              <a
+//                href="/"
+//                className="font-bold text-blue-400 hover:text-[gray]"
+//              >
+//                Readmore
+//                <FaArrowRight className="inline-block ml-2" />
+//              </a>
+//            </div>
+//          </div>
+//        </div>
+//      ));
+//    }
+
+//   const blog = [
+//     {
+//       id: 1,
+//       title: "Lorem ipsum dolor sit amet consectetur adipit.isicing el",
+//       Image: "/src/assets/blog1.jpg",
+//     },
+//     {
+//       id: 2,
+//       title: "perspiciatis incidunt officia similique vel qui.",
+//       Image: "/src/assets/blog2.jpg",
+//     },
+//     {
+//       id: 3,
+//       title: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+//       Image: "/src/assets/blog3.jpg",
+//     },
+//   ];
